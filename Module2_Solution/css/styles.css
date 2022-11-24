@@ -5,14 +5,17 @@
 }
 /**************Page background colour****************/
 body {
-    background-color: gray;
+    background-color: white;
 }
 /**************Setting heading style*****************/
 #heading {
  text-align: center;
- color: gold;
+ color: black;
 }
-
+/***************section spacing********************/
+.section {
+    padding: 5px;
+}
 /***************Paragraph <p> Style****************/
 #bigbox1,#bigbox2,#bigbox3 {
     width: auto;
@@ -20,53 +23,41 @@ body {
     color: azure;
     text-align: center;
     margin: auto;
-    padding: 40px;
-}
-#bigbox1 {
-    background-color: rgb(104, 37, 37);
-    border: 4px solid gold;
-}
-#bigbox2 {
-    background-color: rgb(31, 42, 100);
-    border: 4px solid gold;
-}
-#bigbox3 {
-    background-color: rgb(32, 88, 42);
-    border: 4px solid gold;
+    padding: 30px;
+    background-color: gray;
+    border: 4px solid black;
 }
 /**************Responsive framework***************/
 .row {
     width: 100%;
-    margin: 2px;
-    background-color: greenyellow;
+    margin: auto;
 } 
 /**************Innerbox***************/
 #box1,#box2,#box3 {
-    padding: 4px;
-    width: 100px;
+    padding: 2px;
+    width: 130px;
     height: 30px;
     margin: auto;
     float: right;
     text-align: center;
+    font: bold;
+    border: 4px solid black;
 }
 #box1 {
-    background-color: rgb(228, 96, 96);
-    border: 4px solid gold;
+    background-color: rgb(241, 141, 191);
 }
 #box2 {
-    background-color: rgb(97, 115, 219);
-    border: 4px solid gold;
+    background-color: rgb(236, 56, 56);
+    color: white;
 }
 #box3 {
-    background-color: rgb(58, 151, 74);
-    border: 4px solid gold;
+    background-color: rgb(241, 223, 57);
 }
 /**************Media screen sizes*****************/
 /*****************Large***************************/
 @media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
-        border: 1px solid burlywood;
     } 
   .col-lg-1 {
       width: 8.33%;
@@ -109,7 +100,6 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
-        border: 1px solid burlywood;
     }
   .col-md-1 {
       width: 8.33%;
@@ -152,7 +142,6 @@ body {
 @media (max-width: 767px) {
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
         float: left;
-        border: 1px solid burlywood;
       }
   .col-sm-1 {
       width: 8.33%;
